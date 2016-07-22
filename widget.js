@@ -321,7 +321,7 @@ cpdefine("inline:com-chilipeppr-widget-tinyg", ["chilipeppr_ready", "jquerycooki
                 '{"hp":n}',
                 '{"fb":n}',
                 '{"mt":n}',
-                { cmd: '{"sr":{"line":t,"posx":t,"posy":t,"posz":t,"vel":t,"unit":t,"stat":t,"feed":t,"coor":t,"momo":t,"plan":t,"path":t,"dist":t,"mpox":t,"mpoy":t,"mpoz":t}}', pauseAfter: 250}
+                { cmd: '{"sr":{"line":t,"posx":t,"posy":t,"posz":t,"posa":t,"posb":t,"posc":t,"vel":t,"unit":t,"stat":t,"feed":t,"coor":t,"momo":t,"plan":t,"path":t,"dist":t,"mpox":t,"mpoy":t,"mpoz":t,"mpoa":t,"mpob":t,"mpoc":t}}', pauseAfter: 250}
                 // { cmd: '%' }
             ];
             // old approach of just a string
@@ -916,6 +916,8 @@ cpdefine("inline:com-chilipeppr-widget-tinyg", ["chilipeppr_ready", "jquerycooki
                 y: sr.posy != undefined ? sr.posy : null,
                 z: sr.posz != undefined ? sr.posz : null,
                 a: sr.posa != undefined ? sr.posa : null,
+                b: sr.posb != undefined ? sr.posb : null,
+                c: sr.posc != undefined ? sr.posc : null,
                 type: 'work'
             }
             // As of 29 Jun 2015, the init commands include machine coordinates. 
@@ -928,6 +930,8 @@ cpdefine("inline:com-chilipeppr-widget-tinyg", ["chilipeppr_ready", "jquerycooki
                 y: sr.mpoy != undefined ? sr.mpoy : null,
                 z: sr.mpoz != undefined ? sr.mpoz : null,
                 a: sr.mpoa != undefined ? sr.mpoa : null,
+                b: sr.mpob != undefined ? sr.mpob : null,
+                c: sr.mpoc != undefined ? sr.mpoc : null,
                 type: 'machine'
             }
 
